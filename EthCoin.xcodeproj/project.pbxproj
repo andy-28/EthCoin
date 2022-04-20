@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		219892C528058D95009202E7 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219892C428058D95009202E7 /* CryptoModel.swift */; };
+		219892C828059104009202E7 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219892C728059104009202E7 /* AppViewModel.swift */; };
+		219892CA280592E5009202E7 /* LinePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219892C9280592E5009202E7 /* LinePath.swift */; };
+		219892CC2805B22E009202E7 /* Ethereum_Coin.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 219892CB2805B22E009202E7 /* Ethereum_Coin.usdz */; };
 		21A8210B28057F3400035F32 /* EthCoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A8210A28057F3400035F32 /* EthCoinApp.swift */; };
 		21A8210D28057F3400035F32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A8210C28057F3400035F32 /* ContentView.swift */; };
 		21A8210F28057F3600035F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A8210E28057F3600035F32 /* Assets.xcassets */; };
 		21A8211228057F3600035F32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A8211128057F3600035F32 /* Preview Assets.xcassets */; };
+		21A8211B28057F7C00035F32 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A8211A28057F7C00035F32 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		219892C428058D95009202E7 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		219892C728059104009202E7 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		219892C9280592E5009202E7 /* LinePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinePath.swift; sourceTree = "<group>"; };
+		219892CB2805B22E009202E7 /* Ethereum_Coin.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Ethereum_Coin.usdz; sourceTree = "<group>"; };
 		21A8210728057F3400035F32 /* EthCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A8210A28057F3400035F32 /* EthCoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthCoinApp.swift; sourceTree = "<group>"; };
 		21A8210C28057F3400035F32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21A8210E28057F3600035F32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21A8211128057F3600035F32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21A8211A28057F7C00035F32 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219892C6280590EC009202E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				219892C728059104009202E7 /* AppViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		21A820FE28057F3400035F32 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +69,12 @@
 		21A8210928057F3400035F32 /* EthCoin */ = {
 			isa = PBXGroup;
 			children = (
+				219892C6280590EC009202E7 /* ViewModel */,
+				21A8211928057F6400035F32 /* Model */,
+				21A8211828057F5E00035F32 /* View */,
 				21A8210A28057F3400035F32 /* EthCoinApp.swift */,
 				21A8210C28057F3400035F32 /* ContentView.swift */,
+				219892CB2805B22E009202E7 /* Ethereum_Coin.usdz */,
 				21A8210E28057F3600035F32 /* Assets.xcassets */,
 				21A8211028057F3600035F32 /* Preview Content */,
 			);
@@ -65,6 +87,23 @@
 				21A8211128057F3600035F32 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21A8211828057F5E00035F32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				219892C9280592E5009202E7 /* LinePath.swift */,
+				21A8211A28057F7C00035F32 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21A8211928057F6400035F32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				219892C428058D95009202E7 /* CryptoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219892CC2805B22E009202E7 /* Ethereum_Coin.usdz in Resources */,
 				21A8211228057F3600035F32 /* Preview Assets.xcassets in Resources */,
 				21A8210F28057F3600035F32 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219892C828059104009202E7 /* AppViewModel.swift in Sources */,
 				21A8210D28057F3400035F32 /* ContentView.swift in Sources */,
+				21A8211B28057F7C00035F32 /* Home.swift in Sources */,
+				219892C528058D95009202E7 /* CryptoModel.swift in Sources */,
+				219892CA280592E5009202E7 /* LinePath.swift in Sources */,
 				21A8210B28057F3400035F32 /* EthCoinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
